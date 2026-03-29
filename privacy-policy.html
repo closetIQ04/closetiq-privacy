@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClosetIQ – Privacy Policy</title>
+  <style>
+    :root {
+      --forest: #2D5A3D;
+      --sage: #87A08B;
+      --terracotta: #C17A5A;
+      --bg: #F9F7F4;
+      --card: #FFFFFF;
+      --text: #1C1C1E;
+      --subtle: #6C6C70;
+      --border: #E5E0D8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--forest);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 6px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .effective {
+      background: var(--sage);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 28px;
+    }
+    .intro {
+      font-size: 15px;
+      color: var(--subtle);
+      margin-bottom: 32px;
+      border-left: 3px solid var(--sage);
+      padding-left: 16px;
+    }
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section h2 .emoji { font-size: 20px; }
+    p { margin-bottom: 12px; font-size: 15px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; font-size: 15px; }
+    strong { color: var(--text); }
+    a { color: var(--forest); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #EEF4F0;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 14px;
+      color: var(--forest);
+      font-weight: 500;
+      margin-top: 12px;
+    }
+    footer {
+      text-align: center;
+      color: var(--subtle);
+      font-size: 13px;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1C1C1E;
+        --card: #2C2C2E;
+        --text: #F2F2F7;
+        --subtle: #8E8E93;
+        --border: #3A3A3C;
+      }
+      .highlight { background: #1A3325; color: #7EC89A; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="icon">👗</div>
+  <h1>ClosetIQ Privacy Policy</h1>
+  <p>Your wardrobe data stays yours</p>
+</header>
+
+<main>
+  <div class="effective">Effective: January 1, 2025</div>
+
+  <p class="intro">
+    ClosetIQ ("we," "us," "our") is committed to protecting your privacy. This policy explains what data we collect,
+    how we use it, and the choices you have. We keep it simple and honest.
+  </p>
+
+  <section>
+    <h2><span class="emoji">📦</span> What We Collect</h2>
+    <p>We collect only what's needed to run the app:</p>
+    <ul>
+      <li><strong>Account info</strong> — email address (if you sign up with email or Apple), or an anonymous user ID if you skip sign-up.</li>
+      <li><strong>Wardrobe data</strong> — clothing item names, categories, colors, wear counts, and formality tags you enter.</li>
+      <li><strong>Photos</strong> — photos you upload of your clothing, stored securely in cloud storage. You can delete them at any time.</li>
+      <li><strong>Location (approximate)</strong> — used only to show you local weather for outfit suggestions. We never store your location.</li>
+      <li><strong>Usage data</strong> — basic app analytics (crashes, feature usage) to help us improve the app. No personal identifiers are attached.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="emoji">🤖</span> AI &amp; Photo Processing</h2>
+    <p>
+      When you use AI features (auto-categorize, outfit suggestions), your clothing photos or descriptions are sent
+      to our secure AI backend. Photos are processed to identify the item, color, and category — and are
+      <strong>not used to train AI models</strong> or shared with third parties beyond our processing infrastructure.
+    </p>
+    <div class="highlight">📸 Photos are compressed and sent over HTTPS. We do not store raw photos longer than needed to complete the analysis.</div>
+  </section>
+
+  <section>
+    <h2><span class="emoji">☁️</span> How We Store Your Data</h2>
+    <p>
+      Wardrobe items and outfit plans are stored in <strong>Supabase</strong>, a secure PostgreSQL cloud database
+      hosted in the United States. All data is encrypted in transit (TLS) and at rest (AES-256).
+    </p>
+    <p>
+      Each user's data is isolated — other users cannot access your wardrobe, and we employ row-level security
+      policies to enforce this at the database level.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">🔒</span> How We Use Your Data</h2>
+    <ul>
+      <li>To provide outfit recommendations and weekly planning</li>
+      <li>To sync your wardrobe across devices</li>
+      <li>To send opt-in morning outfit reminders (notifications)</li>
+      <li>To process purchases and manage your subscription status</li>
+      <li>To improve app reliability and fix bugs</li>
+    </ul>
+    <p>We <strong>do not</strong> sell your data to advertisers or third parties. Ever.</p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">🔔</span> Push Notifications</h2>
+    <p>
+      If you enable morning reminders, we send a daily notification to prompt you to log your outfit.
+      You can turn this off at any time in <strong>Settings → Notifications → ClosetIQ</strong> or
+      within the app under Profile.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">💳</span> Subscriptions &amp; Purchases</h2>
+    <p>
+      Payments are handled by <strong>Apple In-App Purchase</strong> and <strong>RevenueCat</strong>.
+      We never see or store your payment card details. RevenueCat receives a anonymized customer identifier
+      to track subscription status. See RevenueCat's privacy policy at
+      <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">🧑‍⚖️</span> Your Rights</h2>
+    <ul>
+      <li><strong>Access</strong> — request a copy of all data we hold about you</li>
+      <li><strong>Deletion</strong> — delete your account and all associated data from within the app (Profile → Delete Account) or by emailing us</li>
+      <li><strong>Portability</strong> — export your wardrobe data as a structured file on request</li>
+      <li><strong>Correction</strong> — update or correct your data at any time in-app</li>
+      <li><strong>Opt-out</strong> — turn off notifications or analytics sharing at any time</li>
+    </ul>
+    <p>Residents of the EU/EEA have additional rights under GDPR. California residents have rights under CCPA. Contact us to exercise any of these rights.</p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">👶</span> Children's Privacy</h2>
+    <p>
+      ClosetIQ is not directed at children under 13. We do not knowingly collect personal information from children.
+      If you believe a child has provided us with personal information, please contact us and we will delete it promptly.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">🔄</span> Changes to This Policy</h2>
+    <p>
+      We may update this policy from time to time. When we make material changes, we'll notify you in-app
+      and update the "Effective" date at the top. Continued use of the app after changes constitutes acceptance.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="emoji">📬</span> Contact Us</h2>
+    <p>Questions, concerns, or data requests? We'd love to hear from you:</p>
+    <p>
+      📧 <a href="mailto:privacy@closetiq.app">privacy@closetiq.app</a><br/>
+      🌐 <a href="https://closetiq.app" target="_blank">closetiq.app</a>
+    </p>
+    <div class="highlight">We aim to respond to all privacy inquiries within 48 hours.</div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 ClosetIQ. All rights reserved. &nbsp;|&nbsp;
+  <a href="mailto:privacy@closetiq.app">privacy@closetiq.app</a>
+</footer>
+
+</body>
+</html>
